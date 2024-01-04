@@ -8,22 +8,24 @@ public class Endereço {
 }
 
 
-public class Cliente{
-  private String cpf;
-  private String nome;
-  private double salario;
-  //private Endereco endereco;
+public class Cliente {
+    private String cpf;
+    private String nome;
+    private double salario;
+    //private Endereco endereco;
 
-  // Construtor que recebe cpf e nome como parâmetros
-  public Cliente(String nomeRecebido, int cpfRecebido) {
-      this.cpf = cpfRecebido + "1";
-      this.nome = nomeRecebido;
-  }
+    // Construtor que recebe cpf e nome como parâmetros
+    public Cliente(String nomeRecebido, int cpfRecebido) {
+        this.cpf = cpfRecebido + "1";
+        this.nome = nomeRecebido;
+    }
 
-  // Método para calcular o valor total do rendimento em um período
-
+    // Método para calcular o valor total do rendimento em um período
+    public double calcularRendimento(int quantidadeMeses) {
+      System.out.println("O nome do objeto é: " + this.nome);
+      System.out.println("Meses trabalhados: " + quantidadeMeses);
+    }
 }
-
 
 class Main {
   public static void main(String[] args) {
@@ -41,7 +43,7 @@ class Main {
     //System.out.println(inputarNome + "\n" + inputarCPF);
 
     Cliente cliente1 = new Cliente(inputarNome, inputarCPF);
-    //cliente1.calcularRendimento(10);
+    cliente1.calcularRendimento(10);
 
   }
 }
