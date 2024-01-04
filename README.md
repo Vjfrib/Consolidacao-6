@@ -10,3 +10,5 @@ Construa uma subclasse de Cliente da Consolidação 5 chamada ClienteEspecial, c
 ## Pedido 5
 
 Implemente uma classe Cliente em Java que possua quatro atributos: cpf, nome, salário e endereço (este um tipo já existente – crie se necessário for). Nesta classe, deve haver um construtor que receba valores para os atributos cpf e nome. Ainda na classe Cliente, deve haver um método que calcule o valor total do rendimento de um cliente em um determinado período (em quantidade de meses), que deve ser recebido como parâmetro do método em questão.
+
+---
